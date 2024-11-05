@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download on Indus Appstore</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            overflow: hidden;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            max-width: 400px;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 12%;
+            margin-bottom: 15px;
+            animation: bounce 1.5s ease infinite alternate;
+        }
+
+        /* Title and Description */
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Rating section */
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 3px;
+        }
+
+        .star {
+            width: 150px;
+            height: 50px;
+        }
+
+        /* Button styling */
+        .appstore-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: sparkle 1s infinite;
+        }
+
+        /* Button hover effect */
+        .appstore-button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        /* Star rating animation */
+        @keyframes sparkle {
+            0%, 100% {
+                transform: scale(0.9);
+            }
+            50% {
+                transform: scale(1);
+            }
+        }
+
+        /* Fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .appstore-button {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+
+            .star {
+                width: 150px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Logo -->
+    <img src="logo.png" alt="App Logo" class="logo">
+
+    <!-- Title and Description -->
+    <div class="title">Rock Paper Sciessors Game</div>
+    <br>
+    <div class="description">Rock Paper Scissors is a quick, classic hand game where players choose rock, paper, or scissors to outsmart their opponent. Rock beats scissors, scissors cuts paper, and paper covers rock. <br> Available on the Indus Appstore.</div>
+
+    <!-- Rating section -->
+    <div class="rating">
+        <img src="stars.png" class="star">
+    </div>
+
+    <!-- Download button -->
+    <a href="https://indusapp.store/o2bhq4r9" class="appstore-button" target="_blank">
+        <img src="https://docstore.indusappstore.com/public/external/developerdashboard-static/badge-black-background-english.png" alt="Indus Appstore Badge" style="height: 20px;">
+        Get it on Indus Appstore
+    </a>
+</div>
+
+</body>
+</html>
